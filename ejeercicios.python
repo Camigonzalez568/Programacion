@@ -1,0 +1,66 @@
+
+# 1. Función simple
+
+
+def saludar(nombre):
+    print(f"Hola, {nombre}")
+
+saludar("Juan")  # Cambiá "Juan" por tu nombre
+
+
+
+# 2. Calculadora básica
+
+
+num1 = float(input("Ingresa el primer número: "))
+num2 = float(input("Ingresa el segundo número: "))
+operacion = input("Elige la operación (+, -, *, /): ")
+
+if operacion == "+":
+    print("Resultado:", num1 + num2)
+elif operacion == "-":
+    print("Resultado:", num1 - num2)
+elif operacion == "*":
+    print("Resultado:", num1 * num2)
+elif operacion == "/":
+    if num2 != 0:
+        print("Resultado:", num1 / num2)
+    else:
+        print("Error: no se puede dividir por cero.")
+else:
+    print("Operación no válida")
+
+
+
+# 3. Lista de compras
+
+
+producto1 = input("Ingresa el primer producto: ")
+producto2 = input("Ingresa el segundo producto: ")
+producto3 = input("Ingresa el tercer producto: ")
+
+lista = [producto1.upper(), producto2.upper(), producto3.upper()]
+print("Tu lista de compras en mayúsculas:", lista)
+
+
+# 4. Números pares del 0 al 10
+
+
+print("Números pares del 0 al 10:")
+for i in range(11):
+    if i % 2 == 0:
+        print(i)
+
+
+
+# 5. Contador de vocales
+
+palabra = input("Ingresa una palabra: ").lower()
+vocales = "aeiou"
+contador = 0
+
+for letra in palabra:
+    if letra in vocales:
+        contador += 1
+
+print(f"La palabra '{palabra}' tiene {contador} vocales.")
