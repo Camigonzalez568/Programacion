@@ -1,0 +1,19 @@
+contactos = ["Mamá", "Papá", "Tía"]
+
+nuevo_contacto = input("Agregá un contacto de emergencia: ")
+contactos.append(nuevo_contacto)
+print("Lista actualizada de contactos:", contactos)
+
+zonas = {
+    "Centro": "segura",
+    "Barrio X": "peligrosa"
+}
+
+zona_ingresada = input("Ingresá una zona: ")
+estado = zonas.get(zona_ingresada, "zona no registrada")
+print(f"La zona '{zona_ingresada}' es {estado}.")
+
+ruta = ["Calle A", "Calle B", "Calle C"]
+print("Ruta original:", ruta)
+
+
